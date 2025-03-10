@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "EasyTube",
+    "version": "1.1",
+    "description": "Removes clutter on YouTube and shows dislike counts on videos.",
+    "permissions": [
+      "activeTab"
+    ],
+    "host_permissions": [
+      "https://returnyoutubedislikeapi.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
